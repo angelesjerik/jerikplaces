@@ -3,6 +3,15 @@
     <header>
         <meta charset="UTF-8">
     </header>
+    <style>
+      form {
+        width: 500px;
+        margin: 0 auto;
+      }
+      fieldset {
+        padding : 20px;
+      }
+    </style>
     <body>
 <nav>
   <ul>
@@ -11,6 +20,66 @@
     <li><a href="../contact.html">Contact</a></li>
   </ul>
 </nav>
+<section
+  class='place-inquiry'>
+  <h1>Ask about this place</h1>
+
+  <form>
+    <fieldset>
+      <legend>
+        Visit Details
+      </legend>
+      <label 
+      for="quantity">"Number of Visitor</label>
+      <input type="number"
+      id="quantity" name="quantity"
+      min="1" max="20"
+
+<fieldset>
+        <legend>Preferred Visit Method</legend>
+        <label>
+          <input type="radio"
+          name="delivery" value ="personal" required>
+          Personal Visit
+        </label>
+        <label>
+          <input type="radio"
+          name="delivery" value ="guide" required>
+          Guided tour
+          </label>
+          <label>
+          <input type="radio"
+          name="delivery" value ="Group" required>
+          Group tour
+          </label>
+    </fieldset>
+    <fieldset>
+<legend>Optional Extras</legend>
+<label>
+  <input type="checkbox"
+  name="extras" value="food">
+  Food Recommendations
+</label>
+<label>
+  <input type="checkbox"
+  name="extras" value="Activities">
+  Activity Recommendations
+</label>
+<label>
+  <input type="checkbox"
+  name="extras" value="nearby">
+  Nearby Places
+</label>
+</fieldset>
+<label for="email"> Contact Email</label>
+<input type="email" id="email" name="email" required>
+<br><br>
+
+<button type="submit">Send Inquiry</button>
+</fieldset>
+  </form>
+</section>
+
 <main>
 <table>
         <tr>
@@ -24,14 +93,14 @@
           <hr>
         <h3><p><strong>The 58-hectare <b>Rizal Park (Luneta)</b> is packed with historical monuments, themed gardens, and cultural institutions. 
             <br>The top spots to check out are organized by section.</p></strong></h3>
-<hr>
- <img src="../places/chinese.jpg" width="250" alt="chinese">
- <p><strong>A quiet area near the lagoon. It is decorated with pagodas, stone bridges, and traditional Chinese gates.</strong></p>
-          <ul class="specs-list">
+ 
           </td>
         </tr>
       </table>
 </main>
 </body>
+
+
+
 <footer>Locals and visitors use both names for the famous historic urban green space in Manila, Philippines</footer>
 </html>
