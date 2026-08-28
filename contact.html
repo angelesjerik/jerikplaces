@@ -12,6 +12,37 @@
     <div style="width: 800px; margin: auto; text-align: center;">
 
         <h1>Contact Me</h1>
+<form>
+    <fieldset>
+        <legend>Your Details</legend>
+
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+       <br><br>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+        <label for="subject">Subject</label>
+        <select id="subject" name="subject">
+            <option value="suggest">Suggest a Place</option>
+            <option value="detail">Correct a Detail</option>
+            <option value="question">Ask a Question</option>
+            <option value="other">Something Else</option>
+        </select>
+
+        <br><br>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <br><br>
+
+        <button type="submit">Send message</button>
+    </fieldset>
+</form>
+
+
 
         <p>
             Have a question, suggestion, or want to know more about my
