@@ -1,185 +1,219 @@
-/* General Style */
-* {
-    box-sizing: border-box;
-}
+/* =========================
+   PLACE RECOMMENDED - RIZAL PARK
+========================= */
 
 body {
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: #add8e6;
-    color: #243447;
+    color: #222;
 }
 
-/* Header */
-.shop-header {
-    text-align: center;
-    padding: 25px 20px;
-    background-color: #ffffff;
-    border-bottom: 1px solid #dbe7ec;
+/* HEADER */
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 7%;
+    background-color: white;
+    border-bottom: 1px solid #ddd;
 }
 
-.shop-header h1 {
-    margin: 0 0 18px;
-    font-size: 30px;
-    color: #243447;
+.site-header h1 {
+    margin: 0;
+    font-size: 28px;
+    color: #174d3c;
 }
 
-.shop-header nav a {
-    display: inline-block;
-    margin: 0 8px;
-    padding: 10px 18px;
-    border: 1px solid #b8d8e3;
-    border-radius: 20px;
-    color: #256b80;
+.site-header nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.site-header nav a {
     text-decoration: none;
-    background-color: #f8fcfd;
+    color: #174d3c;
+    font-weight: bold;
 }
 
-.shop-header nav a:hover {
-    background-color: #dff3f8;
+.site-header nav a:hover {
+    color: #198754;
 }
 
-/* Main Page */
+/* MAIN PAGE */
 .place-page {
-    max-width: 1000px;
+    max-width: 1100px;
     margin: 40px auto;
     padding: 0 20px;
 }
 
-/* White Information Card */
-.place-card {
+/* HERO CARD */
+.place-hero {
     display: flex;
-    gap: 45px;
-    align-items: flex-start;
-    background-color: #ffffff;
-    padding: 30px;
-    border-radius: 22px;
-    box-shadow: 0 8px 25px rgba(50, 100, 120, 0.15);
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 40px;
+    background-color: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
 }
 
-/* Image */
 .place-image {
-    flex: 1;
+    flex: 1 1 350px;
 }
 
 .place-image img {
     width: 100%;
-    max-width: 440px;
-    height: 470px;
+    max-width: 450px;
+    height: 300px;
     object-fit: cover;
     border-radius: 15px;
     display: block;
 }
 
-/* Information */
 .place-info {
-    flex: 1;
-    text-align: left;
-}
-
-.place-info h1 {
-    font-size: 34px;
-    color: #167c8c;
-    margin-top: 0;
-    margin-bottom: 25px;
+    flex: 1 1 350px;
 }
 
 .place-info h2 {
-    font-size: 21px;
-    color: #167c8c;
+    font-size: 36px;
+    color: #198754;
+    margin-top: 0;
+}
+
+.location {
+    color: #666;
+    font-weight: bold;
+}
+
+.place-info h3 {
+    color: #198754;
     margin-top: 25px;
-    margin-bottom: 12px;
 }
 
 .place-info p {
     line-height: 1.7;
-    color: #4d5d68;
 }
 
-.place-info ul {
-    padding-left: 22px;
-    line-height: 2;
-    color: #4d5d68;
+.place-details {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f0f8fa;
+    border-left: 4px solid #198754;
 }
 
-.place-info li::marker {
-    color: #167c8c;
-}
-
-/* Recommendation Section */
-.recommendation-section {
-    margin-top: 40px;
-    background-color: #ffffff;
-    padding: 35px;
-    border-radius: 22px;
-    box-shadow: 0 8px 25px rgba(50, 100, 120, 0.15);
-}
-
-.recommendation-section h1 {
+/* WHY VISIT */
+.why-visit {
     text-align: center;
-    color: #167c8c;
+    margin-top: 50px;
+}
+
+.why-visit h2 {
+    color: white;
     font-size: 30px;
-    margin-top: 0;
 }
 
-.section-description {
+.benefits-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.benefit-card {
+    flex: 1 1 200px;
+    max-width: 240px;
+    background-color: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+}
+
+.benefit-card span {
+    font-size: 35px;
+}
+
+.benefit-card h3 {
+    color: #198754;
+}
+
+.benefit-card p {
+    line-height: 1.5;
+    color: #555;
+}
+
+/* VISIT FORM */
+.visit-form-section {
+    background-color: white;
+    margin-top: 50px;
+    padding: 35px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.visit-form-section h2 {
     text-align: center;
-    color: #607d8b;
+    color: #198754;
     margin-bottom: 30px;
 }
 
-/* Form */
 .visit-form {
     max-width: 700px;
     margin: auto;
 }
 
 fieldset {
-    border: 1px solid #c5dfe7;
-    border-radius: 12px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
     padding: 20px;
     margin-bottom: 20px;
 }
 
 legend {
-    color: #167c8c;
+    color: #198754;
     font-weight: bold;
     padding: 0 10px;
 }
 
-label {
+.visit-form label {
     display: block;
-    margin: 12px 0;
-    color: #405563;
+    margin-bottom: 8px;
+    color: #444;
 }
 
-input[type="number"],
-input[type="email"] {
+.visit-form input[type="number"],
+.visit-form input[type="email"] {
     width: 100%;
+    box-sizing: border-box;
     padding: 12px;
-    margin-top: 8px;
-    border: 1px solid #c5dfe7;
+    border: 1px solid #ccc;
     border-radius: 8px;
+    margin-bottom: 15px;
     font-size: 15px;
 }
 
-input[type="radio"],
-input[type="checkbox"] {
-    accent-color: #167c8c;
-    margin-right: 8px;
+.radio-group,
+.checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
 }
 
-.visit-form p {
-    color: #405563;
-    font-weight: bold;
-    margin-bottom: 8px;
+.radio-group label,
+.checkbox-group label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
 }
 
-button {
+.visit-form button {
     width: 100%;
     padding: 14px;
-    margin-top: 10px;
-    background-color: #167c8c;
+    background-color: #198754;
     color: white;
     border: none;
     border-radius: 8px;
@@ -188,41 +222,61 @@ button {
     cursor: pointer;
 }
 
-button:hover {
-    background-color: #0f6270;
+.visit-form button:hover {
+    background-color: #146c43;
 }
 
-/* Footer */
+/* FOOTER */
 footer {
     text-align: center;
     padding: 30px;
-    color: #45616c;
+    color: #555;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
+/* about */
+@media (max-width: 700px) {
 
-    .place-card {
+    .site-header {
         flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .site-header nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .place-page {
+        margin: 20px auto;
+    }
+
+    .place-hero {
+        padding: 25px;
         gap: 25px;
     }
 
     .place-image img {
+        height: 250px;
         max-width: 100%;
-        height: 350px;
     }
 
-    .place-info h1 {
-        font-size: 28px;
+    .place-info h2 {
+        font-size: 30px;
     }
 
-    .recommendation-section {
-        padding: 25px 20px;
+    .benefit-card {
+        max-width: none;
     }
 
+    .visit-form-section {
+        padding: 25px;
+    }
 }
 
-/* General Settings */
+
+/* ===== GENERAL ===== */
+
 * {
     box-sizing: border-box;
 }
@@ -231,243 +285,388 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: #add8e6;
-    color: #243447;
+    color: #222;
 }
 
-/* Header */
-.shop-header {
-    background-color: white;
-    padding: 25px 8%;
-    text-align: center;
-    border-bottom: 1px solid #d8e8ed;
+/* ===== HEADER ===== */
+
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 7%;
+    background-color: #ffffff;
+    border-bottom: 1px solid #ddd;
 }
 
-.shop-header h1 {
-    margin: 0 0 15px;
-    color: #243447;
-    font-size: 32px;
+.site-header h1 {
+    margin: 0;
+    font-size: 28px;
+    color: #164e63;
 }
 
-.shop-header nav a {
-    color: #287b9b;
+.site-header nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.site-header nav a {
     text-decoration: none;
-    margin: 0 12px;
+    color: #164e63;
     font-weight: bold;
 }
 
-.shop-header nav a:hover {
-    color: #145b75;
+.site-header nav a:hover {
+    color: #0f766e;
 }
 
-/* Main Content */
-main {
+/* ===== ABOUT PAGE ===== */
+
+.about-page {
     max-width: 1000px;
     margin: 40px auto;
     padding: 0 20px;
 }
 
-/* White Card */
-.about-card,
-.contact-card,
-.product-page {
-    background-color: white;
-    border-radius: 20px;
-    padding: 40px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
-}
+/* Main introduction */
 
-/* Headings */
-h1, h2, h3 {
-    color: #243447;
-}
-
-h2 {
-    font-size: 28px;
-    margin-top: 0;
-}
-
-h3 {
-    color: #19191a;
-    margin-top: 25px;
-}
-
-p {
-    line-height: 1.8;
-    color: #405563;
-}
-
-/* About Page */
-.about-intro {
+.about-hero {
     display: flex;
     align-items: center;
-    gap: 40px;
-    margin-bottom: 35px;
-}
-
-.about-intro img {
-    width: 230px;
-    height: 280px;
-    object-fit: cover;
-    border-radius: 15px;
-}
-
-.about-text {
-    flex: 1;
-}
-
-.about-text h1 {
-    font-size: 32px;
-    margin-bottom: 10px;
-}
-
-.about-section {
-    margin-top: 25px;
-}
-
-/* Contact Page */
-.contact-card {
-    max-width: 700px;
-    margin: auto;
-}
-
-.contact-card h2 {
-    text-align: center;
-}
-
-.contact-card .subtitle {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.contact-info {
-    background-color: #f0f9fc;
-    padding: 20px;
-    border-radius: 12px;
+    gap: 45px;
+    background-color: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
     margin-bottom: 25px;
 }
 
-.contact-info p {
-    margin: 8px 0;
-}
-
-.contact-form label {
-    display: block;
-    margin-top: 15px;
-    margin-bottom: 6px;
-    font-weight: bold;
-}
-
-.contact-form input,
-.contact-form textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #c8dfe7;
-    border-radius: 8px;
-    font-size: 15px;
-}
-
-.contact-form textarea {
-    height: 120px;
-    resize: vertical;
-}
-
-.contact-form button {
-    width: 100%;
-    margin-top: 20px;
-    padding: 13px;
-    background-color: #287b9b;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.contact-form button:hover {
-    background-color: #145b75;
-}
-
-/* Product / Place Page */
-.product-page {
-    display: flex;
-    gap: 50px;
-    align-items: flex-start;
-}
-
-.product-image {
-    flex: 1;
+.owner-image {
+    flex: 0 0 230px;
     text-align: center;
 }
 
-.product-image img {
-    width: 100%;
-    max-width: 350px;
+.owner-image img {
+    width: 230px;
+    height: 280px;
+    object-fit: cover;
+    object-position: center top;
     border-radius: 15px;
+    display: block;
 }
 
-.product-info {
+.owner-intro {
     flex: 1;
 }
 
-.product-info h1 {
-    font-size: 34px;
-    color: #287b9b;
+.owner-intro h2 {
+    color: #0f766e;
+    font-size: 30px;
+    margin-top: 0;
 }
 
-.product-info ul {
-    line-height: 2;
-    color: #405563;
+.owner-intro h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
 }
 
-.info-box {
-    background-color: #f0f9fc;
-    padding: 20px;
-    border-radius: 12px;
-    margin-top: 20px;
+.owner-intro p {
+    line-height: 1.7;
+    color: #444;
 }
 
-/* Footer */
+/* Information cards */
+
+.about-card {
+    background-color: white;
+    padding: 30px 40px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+}
+
+.about-card h2 {
+    color: #0f766e;
+    margin-top: 0;
+    font-size: 24px;
+}
+
+.about-card p {
+    line-height: 1.8;
+    color: #444;
+}
+
+/* ===== FOOTER ===== */
+
 footer {
     text-align: center;
     padding: 25px;
-    color: #405563;
+    color: #555;
 }
 
-/* Responsive Design */
+/* ===== RESPONSIVE ===== */
+
 @media (max-width: 700px) {
-    .about-intro,
-    .product-page {
+
+    .site-header {
         flex-direction: column;
+        gap: 15px;
         text-align: center;
     }
 
-    .about-intro img {
-        width: 200px;
-        height: 240px;
+    .site-header nav ul {
+        gap: 15px;
     }
 
-    .about-card,
-    .contact-card,
-    .product-page {
+    .about-hero {
+        flex-direction: column;
+        text-align: center;
         padding: 25px;
     }
+
+    .owner-image {
+        flex: none;
+    }
+
+    .owner-image img {
+        width: 200px;
+        height: 250px;
+    }
+
+    .about-card {
+        padding: 25px;
+    }
+    
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #a9d9e8;
+    color: #0c4968;
 }
 
 
+/* MAIN CONTAINER */
 
-/* =========================
-   FOOTER
-========================= */
+.contact-container {
+    width: 90%;
+    max-width: 1060px;
 
-footer {
-    background: var(--dark-color);
-    color: white;
-    text-align: center;
-    padding: 20px;
-    margin-top: 40px;
+    margin: 35px auto;
+
+    background: white;
+
+    border-radius: 20px;
+
+    padding: 65px 40px 40px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 40px;
 }
 
-footer p {
+
+/* HEADINGS */
+
+h2 {
+    font-size: 25px;
+
+    color: #064d6b;
+
+    margin-bottom: 22px;
+}
+
+
+/* DESCRIPTION */
+
+.description {
+    color: #53718d;
+
+    font-size: 16px;
+
+    line-height: 1.7;
+
+    margin-bottom: 25px;
+}
+
+
+/* CONTACT CARDS */
+
+.info-card {
+    background: #eef9ff;
+
+    border-left: 4px solid #20b4f2;
+
+    border-radius: 9px;
+
+    padding: 18px 15px;
+
+    margin-bottom: 21px;
+
+    min-height: 88px;
+}
+
+
+.info-title {
+    color: #007a78;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    margin-bottom: 12px;
+}
+
+
+.info-text {
+    color: #355f82;
+
+    font-size: 16px;
+}
+
+
+/* FORM */
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+
+label {
+    display: block;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    color: #173d59;
+
+    margin-bottom: 11px;
+}
+
+
+input,
+textarea {
+    width: 100%;
+
+    border: 1px solid #c5d7e5;
+
+    border-radius: 8px;
+
+    padding: 13px 14px;
+
+    font-family: inherit;
+
+    font-size: 15px;
+
+    outline: none;
+
+    background: #fafafa;
+
+    color: #333;
+}
+
+
+input {
+    height: 45px;
+}
+
+
+textarea {
+    height: 113px;
+
+    resize: vertical;
+}
+
+
+/* INPUT FOCUS */
+
+input:focus,
+textarea:focus {
+    border-color: #20b4f2;
+
+    box-shadow: 0 0 0 2px rgba(32, 180, 242, 0.12);
+}
+
+
+input::placeholder,
+textarea::placeholder {
+    color: #75859a;
+}
+
+
+/* BUTTON */
+
+.send-btn {
+    width: 100%;
+
+    height: 46px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    background: #10877e;
+
     color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+
+.send-btn:hover {
+    background: #08736b;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+    .contact-container {
+        width: 94%;
+
+        grid-template-columns: 1fr;
+
+        padding: 35px 25px;
+
+        gap: 20px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .contact-container {
+        width: 95%;
+
+        padding: 25px 18px;
+
+        border-radius: 12px;
+    }
+
+    .info-card {
+        padding: 15px;
+    }
 }

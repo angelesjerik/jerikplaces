@@ -5,79 +5,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rizal Park | Place Recommended</title>
-
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
 
-    <header class="shop-header">
-        <h1>🌸 Place recommend</h1>
+    <header class="site-header">
+        <h1>🌸 Rizal park</h1>
 
         <nav>
-            <a href="../index.html">Home</a>
-            <a href="../about.html">About</a>
-            <a href="../contact.html">Contact</a>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../about.html">About the Owner</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+            </ul>
         </nav>
     </header>
 
     <main class="place-page">
 
-        <!-- Rizal Park Information -->
-        <section class="place-card">
-
+        <section class="place-hero">
             <div class="place-image">
                 <img src="../rizal.jpg" alt="Rizal Park">
             </div>
 
             <div class="place-info">
+                <h2>Rizal Park</h2>
+                <p class="location">📍 Manila, Philippines</p>
 
-                <h1>Rizal Park</h1>
-
-                <h2>About the Place</h2>
-
+                <h3>About the Place</h3>
                 <p>
-                    Rizal Park, also known as Luneta Park, is one of the
-                    most famous historical parks in the Philippines.
-                    It is located in Manila and is dedicated to Dr. Jose Rizal,
-                    the national hero of the country.
+                    Rizal Park is one of the most famous historical parks
+                    in the Philippines. It is a beautiful place where
+                    visitors can relax, enjoy the scenery, and learn about
+                    Philippine history.
                 </p>
 
-                <p>
-                    The park is a popular destination for tourists, families,
-                    and students because of its beautiful scenery, historical
-                    landmarks, and peaceful environment.
-                </p>
-
-                <h2>Place Information</h2>
-
-                <ul>
-                    <li><strong>Location:</strong> Manila, Philippines</li>
-                    <li><strong>Type:</strong> Historical Park</li>
-                    <li><strong>Best For:</strong> Sightseeing and Relaxation</li>
-                    <li><strong>Recommended:</strong> Families, Students, and Tourists</li>
-                </ul>
-
-                <h2>Why Visit Rizal Park?</h2>
-
-                <ul>
-                    <li>Learn about Philippine history</li>
-                    <li>Enjoy the beautiful scenery</li>
-                    <li>Relax with family and friends</li>
-                    <li>Visit historical landmarks</li>
-                </ul>
-
+                <div class="place-details">
+                    <p><strong>Type:</strong> Historical Park</p>
+                    <p><strong>Best For:</strong> Sightseeing and Relaxation</p>
+                </div>
             </div>
-
         </section>
 
-        <!-- Place Recommended Form -->
-        <section class="recommendation-section">
+        <section class="why-visit">
+            <h2>Why Visit Rizal Park?</h2>
 
-            <h1>Place Recommended</h1>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <span>📚</span>
+                    <h3>Learn History</h3>
+                    <p>Discover important stories about Philippine history.</p>
+                </div>
 
-            <p class="section-description">
-                Plan your visit and tell us what you are looking for.
-            </p>
+                <div class="benefit-card">
+                    <span>🌳</span>
+                    <h3>Enjoy Nature</h3>
+                    <p>Relax and appreciate the beautiful scenery.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <span>👨‍👩‍👧</span>
+                    <h3>Family Bonding</h3>
+                    <p>Spend quality time with family and friends.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <span>📸</span>
+                    <h3>Take Photos</h3>
+                    <p>Capture memorable moments and visit landmarks.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="visit-form-section">
+            <h2>Plan Your Visit</h2>
 
             <form class="visit-form">
 
@@ -85,59 +86,63 @@
                     <legend>Visit Details</legend>
 
                     <label for="visitors">Number of Visitors</label>
-                    <input type="number" id="visitors" name="visitors" min="1" required>
+                    <input type="number" id="visitors" name="visitors"
+                           min="1" placeholder="Enter number">
 
                     <p>Preferred Visit Method</p>
 
-                    <label>
-                        <input type="radio" name="visit-method" value="personal" required>
-                        🚶Personal Visit
-                    </label>
+                    <div class="radio-group">
+                        <label>
+                            <input type="radio" name="visit-method" value="personal">
+                            Personal Visit
+                        </label>
 
-                    <label>
-                        <input type="radio" name="visit-method" value="guided">
-                        🧑‍🏫Guided Tour
-                    </label>
+                        <label>
+                            <input type="radio" name="visit-method" value="guided">
+                            Guided Tour
+                        </label>
 
-                    <label>
-                        <input type="radio" name="visit-method" value="group">
-                        👥Group Tour
-                    </label>
+                        <label>
+                            <input type="radio" name="visit-method" value="group">
+                            Group Tour
+                        </label>
+                    </div>
                 </fieldset>
 
                 <fieldset>
                     <legend>Optional Extras</legend>
 
-                    <label>
-                        <input type="checkbox" name="extras" value="food">
-                        🍽️Food Recommendations
-                    </label>
+                    <div class="checkbox-group">
+                        <label>
+                            <input type="checkbox" name="food">
+                            Food Recommendations
+                        </label>
 
-                    <label>
-                        <input type="checkbox" name="extras" value="activities">
-                        🎯Activity Recommendations
-                    </label>
+                        <label>
+                            <input type="checkbox" name="activities">
+                            Activity Recommendations
+                        </label>
 
-                    <label>
-                        <input type="checkbox" name="extras" value="nearby">
-                        📍Nearby Places
-                    </label>
+                        <label>
+                            <input type="checkbox" name="nearby">
+                            Nearby Places
+                        </label>
+                    </div>
                 </fieldset>
 
                 <label for="email">Contact Email</label>
                 <input type="email" id="email" name="email"
-                       placeholder="you@example.com" required>
+                       placeholder="Enter your email">
 
                 <button type="submit">Send Inquiry</button>
 
             </form>
-
         </section>
 
     </main>
 
     <footer>
-        <p>© 2026 place recommend. All rights reserved.</p>
+        <p>© 2026 Rizal park. All rights reserved.</p>
     </footer>
 
 </body>
