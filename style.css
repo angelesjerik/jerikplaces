@@ -731,3 +731,40 @@ textarea::placeholder {
     border-radius: 8px;
     margin-top: 15px;
 }
+
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 70px;
+    background-color: #fff8e8;
+    border-bottom: 2px solid #d99a78;
+}
+
+.site-header h1 {
+    margin: 0;
+    color: #164f43;
+    font-size: 30px;
+}
+
+.site-header nav ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.site-header nav ul li {
+    display: block;
+}
+
+.site-header nav ul li a {
+    text-decoration: none;
+    color: #164f43;
+    font-size: 18px;
+}
+
+.site-header nav ul li a:hover {
+    color: #c86b55;
+}
