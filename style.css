@@ -457,217 +457,232 @@ body {
 
 /* MAIN CONTAINER */
 
-.contact-container {
-    width: 90%;
-    max-width: 1060px;
+/* =========================
+   CONTACT PAGE
+========================= */
 
-    margin: 35px auto;
+.page {
+    width: 1000px;
+    max-width: 95%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    grid-template-areas:
+        "header header"
+        "sidebar main";
+    gap: 20px;
+}
 
-    background: white;
 
-    border-radius: 20px;
+/* HEADER */
 
-    padding: 65px 40px 40px;
+.site-header {
+    grid-area: header;
+
+    background: #fff8e8;
+    border: 2px solid #f0c66d;
+    border-radius: 0 0 15px 15px;
+
+    padding: 25px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-header h1 {
+    margin: 0;
+    color: #006b68;
+    font-size: 30px;
+}
+
+.site-header nav {
+    display: flex;
+    gap: 30px;
+}
+
+.site-header nav a {
+    text-decoration: none;
+    color: #006b68;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+/* SIDEBAR */
+
+.sidebar {
+    grid-area: sidebar;
+
+    background: #fff8e8;
+    border: 2px solid #f0c66d;
+    border-radius: 15px;
+
+    padding: 25px;
+
+    min-height: 500px;
+}
+
+.sidebar h2 {
+    color: #006b68;
+    margin-top: 0;
+    font-size: 24px;
+}
+
+.sidebar h3 {
+    color: #007c70;
+    margin-top: 30px;
+}
+
+.sidebar ul {
+    padding-left: 20px;
+}
+
+.sidebar li {
+    margin-bottom: 8px;
+}
+
+
+/* MAIN CONTACT AREA */
+
+.contact-main {
+    grid-area: main;
 
     display: grid;
-
     grid-template-columns: 1fr 1fr;
+    gap: 25px;
 
-    gap: 40px;
+    align-items: start;
 }
 
 
-/* HEADINGS */
+/* CONTACT INFORMATION */
 
-h2 {
-    font-size: 25px;
+.contact-info,
+.contact-form {
+    background: #fff8e8;
 
-    color: #064d6b;
+    border: 2px solid #f0c66d;
+    border-radius: 15px;
 
-    margin-bottom: 22px;
+    padding: 30px;
+
+    box-sizing: border-box;
 }
 
+.contact-info h1,
+.contact-form h1 {
+    color: #007c70;
+    margin-top: 0;
+    font-size: 28px;
+}
 
-/* DESCRIPTION */
-
-.description {
-    color: #53718d;
-
-    font-size: 16px;
-
-    line-height: 1.7;
-
+.contact-info p {
+    line-height: 1.6;
     margin-bottom: 25px;
 }
 
 
-/* CONTACT CARDS */
+/* CONTACT BOXES */
 
-.info-card {
-    background: #eef9ff;
+.contact-box {
+    background: #eaf7ff;
 
-    border-left: 4px solid #20b4f2;
+    border-left: 5px solid #19aee8;
 
-    border-radius: 9px;
+    border-radius: 10px;
 
-    padding: 18px 15px;
+    padding: 18px;
 
-    margin-bottom: 21px;
+    margin-top: 15px;
 
-    min-height: 88px;
-}
-
-
-.info-title {
-    color: #007a78;
-
-    font-size: 16px;
-
-    font-weight: bold;
-
-    margin-bottom: 12px;
-}
-
-
-.info-text {
-    color: #355f82;
-
-    font-size: 16px;
+    line-height: 1.6;
 }
 
 
 /* FORM */
 
-.form-group {
-    margin-bottom: 20px;
+.contact-form form {
+    display: flex;
+    flex-direction: column;
 }
 
-
-label {
-    display: block;
-
-    font-size: 16px;
-
+.contact-form label {
+    color: #003f5c;
     font-weight: bold;
-
-    color: #173d59;
-
-    margin-bottom: 11px;
+    margin-top: 15px;
+    margin-bottom: 6px;
 }
 
-
-input,
-textarea {
+.contact-form input,
+.contact-form textarea {
     width: 100%;
+    box-sizing: border-box;
 
-    border: 1px solid #c5d7e5;
+    padding: 12px;
 
+    border: 1px solid #ccc;
     border-radius: 8px;
 
-    padding: 13px 14px;
-
-    font-family: inherit;
-
     font-size: 15px;
-
-    outline: none;
-
-    background: #fafafa;
-
-    color: #333;
 }
 
-
-input {
-    height: 45px;
-}
-
-
-textarea {
-    height: 113px;
-
+.contact-form textarea {
+    min-height: 120px;
     resize: vertical;
 }
 
+.contact-form button {
+    margin-top: 20px;
 
-/* INPUT FOCUS */
+    padding: 12px;
 
-input:focus,
-textarea:focus {
-    border-color: #20b4f2;
-
-    box-shadow: 0 0 0 2px rgba(32, 180, 242, 0.12);
-}
-
-
-input::placeholder,
-textarea::placeholder {
-    color: #75859a;
-}
-
-
-/* BUTTON */
-
-.send-btn {
-    width: 100%;
-
-    height: 46px;
-
-    border: none;
-
-    border-radius: 7px;
-
-    background: #10877e;
-
+    background: #007c70;
     color: white;
 
-    font-size: 16px;
+    border: none;
+    border-radius: 8px;
 
+    font-size: 16px;
     font-weight: bold;
 
     cursor: pointer;
-
-    transition: 0.2s ease;
 }
 
-
-.send-btn:hover {
-    background: #08736b;
+.contact-form button:hover {
+    background: #005f59;
 }
 
 
 /* MOBILE */
 
-@media (max-width: 768px) {
+@media (max-width: 700px) {
 
-    .contact-container {
-        width: 94%;
-
+    .page {
+        width: 95%;
         grid-template-columns: 1fr;
 
-        padding: 35px 25px;
+        grid-template-areas:
+            "header"
+            "sidebar"
+            "main";
+    }
 
+    .site-header {
+        flex-direction: column;
         gap: 20px;
     }
 
-    h2 {
-        font-size: 22px;
-    }
-}
-
-
-@media (max-width: 480px) {
-
-    .contact-container {
-        width: 95%;
-
-        padding: 25px 18px;
-
-        border-radius: 12px;
+    .site-header nav {
+        gap: 15px;
     }
 
-    .info-card {
-        padding: 15px;
+    .contact-main {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        min-height: auto;
     }
 }
 
@@ -974,4 +989,122 @@ textarea::placeholder {
 
 }
 
+
+/* ==============================
+   INTRAMUROS PAGE LAYOUT
+   ============================== */
+
+.place-page {
+    width: 100%;
+    max-width: 1100px;
+    margin: 40px auto;
+    
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    grid-template-areas:
+        "sidebar hero"
+        "sidebar form";
+    
+    gap: 28px;
+    align-items: start;
+}
+
+/* Main Intramuros section */
+.place-page > .place-hero {
+    grid-area: hero;
+}
+
+/* WHY VISIT SIDEBAR */
+.place-page > .why-sidebar {
+    grid-area: sidebar;
+
+    position: sticky;
+    top: 20px;
+
+    width: auto;
+    margin: 0;
+
+    background: #fff8e8;
+    border: 2px solid #f2c56b;
+    border-radius: 15px;
+
+    padding: 18px 14px;
+
+    box-sizing: border-box;
+}
+
+/* Sidebar title */
+.why-sidebar h2 {
+    text-align: center;
+    color: #006b63;
+    font-size: 24px;
+    margin: 0 0 18px;
+}
+
+/* Each WHY card */
+.why-sidebar .why-item {
+    background: white;
+    border-radius: 15px;
+
+    padding: 18px 10px;
+    margin-bottom: 16px;
+
+    text-align: center;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+/* Icon */
+.why-sidebar .why-icon {
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+/* Item title */
+.why-sidebar h3 {
+    color: #008060;
+    font-size: 18px;
+    margin: 5px 0 8px;
+}
+
+/* Item paragraph */
+.why-sidebar p {
+    color: #164e63;
+    font-size: 14px;
+    line-height: 1.4;
+    margin: 0;
+}
+
+/* Plan Your Visit */
+.place-page > .visit-form-section {
+    grid-area: form;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+@media (max-width: 700px) {
+
+    .place-page {
+        display: grid;
+        grid-template-columns: 1fr;
+
+        grid-template-areas:
+            "hero"
+            "sidebar"
+            "form";
+
+        width: 92%;
+        margin: 20px auto;
+        gap: 20px;
+    }
+
+    .place-page > .why-sidebar {
+        position: static;
+        width: 100%;
+    }
+
+    .why-sidebar .why-item {
+        margin-bottom: 12px;
+    }
+}
 

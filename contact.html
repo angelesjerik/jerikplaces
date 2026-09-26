@@ -10,128 +10,90 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-
-    <header class="site-header">
-
-    <h1>place recommend</h1>
-
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
 
 </header>
+<body>
 
+<div class="page">
+
+    <header class="site-header">
+        <h1>🏰 Place recommend</h1>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
     </header>
 
 
-    <!-- CONTACT PAGE -->
-    <main class="contact-page">
+    <aside class="sidebar">
 
-        <section class="contact-container">
+        <h2>📍 Place recommend</h2>
 
-            <!-- LEFT -->
-            <div class="contact-information">
+        <h3>📞 Contact pages</h3>
 
-                <h2>Contact Information</h2>
+        <ul>
+            <li><a href="https://www.facebook.com/">fb page</li></a>
+            <li><a href="https://www.instagram.com/">instagram page</li></a>
+            <li><a href="https://www.telegram.com/">telegram</li></a>
+        </ul>
 
-                <p class="contact-description">
-                    You can contact us for product inquiries,
-                    recommendations, or other concerns.
-                </p>
-
-
-                <div class="info-card">
-                    <h3>✉️ Email</h3>
-                    <p>jerik@gmail.com</p>
-                </div>
+    </aside>
 
 
-                <div class="info-card">
-                    <h3>📱 Phone</h3>
-                    <p>0912 345 6789</p>
-                </div>
+    <main class="contact-main">
 
+        <section class="contact-info">
 
-                <div class="info-card">
-                    <h3>📍 Location</h3>
-                    <p>Manila, Philippines</p>
-                </div>
+            <h1>Contact Information</h1>
 
+            <p>
+                You can contact us for product inquiries,
+                recommendations, or other concerns.
+            </p>
 
-                <div class="info-card">
-                    <h3>🕘 Business Hours</h3>
-                    <p>Monday – Saturday, 9:00 AM – 6:00 PM</p>
-                </div>
-
+            <div class="contact-box">
+                📧 <strong>Email</strong>
+                <br>
+                jerik@gmail.com
             </div>
 
-
-            <!-- RIGHT -->
-            <div class="contact-form">
-
-                <h2>Send Us a Message</h2>
-
-                <form>
-
-                    <div class="form-group">
-                        <label for="name">Full Name</label>
-
-                        <input
-                            type="text"
-                            id="name"
-                            placeholder="Enter your name"
-                        >
-                    </div>
-
-
-                    <div class="form-group">
-                        <label for="email">Email Address</label>
-
-                        <input
-                            type="email"
-                            id="email"
-                            placeholder="Enter your email"
-                        >
-                    </div>
-
-
-                    <div class="form-group">
-                        <label for="subject">Subject</label>
-
-                        <input
-                            type="text"
-                            id="subject"
-                            placeholder="Enter subject"
-                        >
-                    </div>
-
-
-                    <div class="form-group">
-                        <label for="message">Message</label>
-
-                        <textarea
-                            id="message"
-                            placeholder="Write your message here..."
-                        ></textarea>
-                    </div>
-
-
-                    <button type="submit">
-                        Send Message
-                    </button>
-
-                </form>
-
+            <div class="contact-box">
+                📱 <strong>Phone</strong>
+                <br>
+                0912 345 6789
             </div>
+
+        </section>
+
+
+        <section class="contact-form">
+
+            <h1>Send Us a Message</h1>
+
+            <form>
+
+                <label>Full Name</label>
+                <input type="text" placeholder="Enter your name">
+
+                <label>Email Address</label>
+                <input type="email" placeholder="Enter your email">
+
+                <label>Subject</label>
+                <input type="text" placeholder="Enter subject">
+
+                <label>Message</label>
+                <textarea placeholder="Write your message"></textarea>
+
+                <button type="submit">Send Message</button>
+
+            </form>
 
         </section>
 
     </main>
 
+</div>
+
 </body>
-</html>
